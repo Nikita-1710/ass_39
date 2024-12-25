@@ -10,11 +10,16 @@ body{
     margin-top: 50px;
 }
 
+.current-player{
+    text-align: center;
+    font-weight: bold;
+}
+
 .board{
     border: 3px solid #750099;
     width: fit-content;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 10px;
     background-color: #d966ff;
     border-radius: 5px;
@@ -31,9 +36,13 @@ body{
     width: 100px;
     margin: 5px;
     border-radius: 5px;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box:hover{
-    box-shadow: 0 0 20px 2px black;
+    box-shadow: 0 0 5px 2px black;
+    cursor: pointer;
+    transition: 0.5s;
 }
