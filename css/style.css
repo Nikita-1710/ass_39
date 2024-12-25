@@ -4,10 +4,17 @@ body{
     background-color: #f9e6ff;
 }
 
+.heading{
+    text-align: center;
+    color: #750099;
+    margin-top: 50px;
+}
+
 .board{
     border: 3px solid #750099;
     width: fit-content;
-    margin: 100px auto;
+    margin: 0 auto;
+    margin-top: 50px;
     padding: 10px;
     background-color: #d966ff;
     border-radius: 5px;
