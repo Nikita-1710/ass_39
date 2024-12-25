@@ -101,8 +101,8 @@ function showWinner(winner) {
     const dialog = document.getElementById("dialog");
     const winnerMessage = document.getElementById("winnerMessage");
 
-    winnerMessage.textContent = `${winner} wins!`;
-    dialog.style.display = "block"; // Show the dialog
+    winnerMessage.innerText = `${winner} wins!`;
+    dialog.style.display = "block"; 
 }
 
 function resetGame() {
