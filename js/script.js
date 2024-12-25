@@ -61,40 +61,48 @@ function chkWinner() {
         2,4,6
     */
    if (isPlayerPresent([0,1,2], "X")) {
-    alert("Player X wins")
+    showWinner("Player X")
    } else if (isPlayerPresent([3,4,5], "X")) {
-    alert("Player X wins")
+    showWinner("Player X")
    } else if (isPlayerPresent([6,7,8], "X")) {
-    alert("Player X wins")
+    showWinner("Player X")
    } else if (isPlayerPresent([0,3,6], "X")) {
-    alert("Player X wins")
+    showWinner("Player X")
    } else if (isPlayerPresent([1,4,7], "X")) {
-    alert("Player X wins")
+    showWinner("Player X")
    } else if (isPlayerPresent([2,5,8], "X")) {
-    alert("Player X wins")
+    showWinner("Player X")
    } else if (isPlayerPresent([0,4,8], "X")) {
-    alert("Player X wins")
+    showWinner("Player X")
    } else if (isPlayerPresent([2,4,6], "X")) {
-    alert("Player X wins")
+    showWinner("Player X")
    } 
 
    if (isPlayerPresent([0,1,2], "O")) {
-    alert("Player O wins")
+    showWinner("Player O");
    } else if (isPlayerPresent([3,4,5], "O")) {
-    alert("Player O wins")
+    showWinner("Player O");
    } else if (isPlayerPresent([6,7,8], "O")) {
-    alert("Player O wins")
+    showWinner("Player O");
    } else if (isPlayerPresent([0,3,6], "O")) {
-    alert("Player O wins")
+    showWinner("Player O");
    } else if (isPlayerPresent([1,4,7], "O")) {
-    alert("Player O wins")
+    showWinner("Player O");
    } else if (isPlayerPresent([2,5,8], "O")) {
-    alert("Player O wins")
+    showWinner("Player O");
    } else if (isPlayerPresent([0,4,8], "O")) {
-    alert("Player O wins")
+    showWinner("Player O");
    } else if (isPlayerPresent([2,4,6], "O")) {
-    alert("Player O wins")
+    showWinner("Player O");
    } 
+}
+
+function showWinner(winner) {
+    const dialog = document.getElementById("dialog");
+    const winnerMessage = document.getElementById("winnerMessage");
+
+    winnerMessage.textContent = `${winner} wins!`;
+    dialog.style.display = "block"; // Show the dialog
 }
 
 function resetGame() {
@@ -102,4 +110,5 @@ function resetGame() {
     rendorBoard()
     currentPlayer = "X"
     document.getElementById("currentPlayer").innerHTML = '<img src="./img/X.png" height="15px">'
+    document.getElementById("dialog").style.display = "none";
 }

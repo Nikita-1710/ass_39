@@ -58,3 +58,34 @@ body{
     font-size: 15px;
     cursor: pointer;
 }
+
+#dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 10;
+}
+
+#dialog h2 {
+    color: #750099;
+}
+
+#dialog button {
+    padding: 10px 20px;
+    background-color: #750099;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#dialog button:hover {
+    background-color: #9c33cc;
+}
