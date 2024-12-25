@@ -46,3 +46,15 @@ body{
     cursor: pointer;
     transition: 0.5s;
 }
+
+.reset-btn{
+    display: block;
+    margin: 50px auto;
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
